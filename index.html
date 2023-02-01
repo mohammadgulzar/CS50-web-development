@@ -7,30 +7,75 @@
         text-align: right;
       }
       div {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         text-align: center;
-      }
-      #text {
-        border-radius: 20px;
+        justify-content: center;
+        display: flex;
       }
       body {
-        background: #bdc1c6;
+        background: #191919;
+      }
+      img {
+        max-width: 300px;
+      }
+      .button {
+        border-radius: 5px;
+        background-color: rgb(73, 71, 71);
+        color: white;
+        width: 120px;
+        margin: 11px 4px;
+        height: 36px;
+        border: none;
+      }
+      .link {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+      }
+      #text {
+        height: 30px;
+        border-radius: 15px;
+        width: 430px;
+        border: none;
+        background-color: #191919;
+        color: white;
+      }
+      #searchImg {
+        max-width: 20px;
+        max-height: 20px;
+        padding-top: 5px;
+        margin-right: 10px;
+      }
+      #searchDiv {
+        margin-left: 475px;
+        width: 500px;
+        border-radius: 15px;
+        border: 1px solid rgb(185, 184, 184);
+      }
+      input:focus {
+        outline: none;
       }
     </style>
   </head>
   <body>
-    <p>
-      <a href="imageIndex.html">Google Image Search</a>
-      <a href="advancedIndex.html">Google Advanced Search</a>
+    <p style="color: white">
+      <a href="imageIndex.html" class="link">Google Image Search |</a>
+      <a href="advancedIndex.html" class="link">Google Advanced Search</a>
     </p>
+
+    <div><img src="googleImg.png" style="margin-top: 200px" /></div>
+
     <form action="https://www.google.com/search">
-      <div><input type="text" name="q" id="text" /></div>
+      <div id="searchDiv">
+        <img src="searchIcon.png" id="searchImg" />
+        <input type="text" name="q" id="text" />
+      </div>
       <div>
-        <input type="submit" value="Google Search" id="button" />
+        <input type="submit" value="Google Search" class="button" />
         <input
           type="submit"
           value="I'm Feeling Lucky"
-          id="button"
+          class="button"
           name="btnI"
         />
       </div>
