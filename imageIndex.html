@@ -2,20 +2,21 @@
 <html lang="en">
   <head>
     <title>Image Search</title>
-    <style>
-      p {
-        text-align: right;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <p>
-      <a href="index.html">Back</a>
+      <a href="index.html" class="link">Return to Google Search</a>
     </p>
+    <div></div>
+    <div><img src="img.png" style="margin-top: 200px" /></div>
     <form action="https://www.google.com/search">
-      <input type="text" name="q" />
-      <input type="hidden" name="tbm" value="isch" />
-      <input type="submit" value="Google Image" />
+      <div id="searchDiv">
+        <img src="searchIcon.png" id="searchImg" />
+        <input type="text" name="q" id="text" />
+        <input type="hidden" name="tbm" value="isch" />
+      </div>
+      <div><input type="submit" value="Find Images" class="button" /></div>
     </form>
   </body>
 </html>

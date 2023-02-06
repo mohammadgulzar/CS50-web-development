@@ -2,29 +2,74 @@
 <html lang="en">
   <head>
     <title>Advanced Search</title>
+    <link rel="stylesheet" href="index.css" />
     <style>
-      p {
-        text-align: right;
-      }
       div {
-        margin-bottom: 10px;
-        text-align: center;
+        text-align: left;
+        justify-content: left;
+        height: 35px;
       }
       label {
         display: inline-block;
-        width: 180px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+        color: #bdc1c6;
+        margin-left: 35px;
+        margin-right: 20px;
       }
 
       input[type="submit"] {
-        background-color: blue;
+        background-color: lightblue;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        text-align: left;
+        display: flex;
+      }
+
+      #Image {
+        padding-left: 10px;
+        height: 24px;
+        width: 74px;
+        display: inline-block;
+      }
+
+      #title {
+        margin: 25px 35px;
+        color: #f28b82;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+      }
+
+      input[type="text"] {
+        background-color: #202124;
+        border: 1px solid #5f6368;
         color: white;
+        display: flex;
+        width: 500px;
+      }
+
+      .btn.btn.btn-primary {
+        margin-left: 640px;
+        background-color: #4d90fe;
+        font-weight: bold;
       }
     </style>
   </head>
+
   <body>
     <p>
-      <a href="index.html">Back</a>
+      <img src="googleImg.png" id="Image" />
+      <a href="index.html" class="link" style="padding-left: 850px"
+        >Return to Google Search</a
+      >
     </p>
+
+    <p id="title">Advanced Search</p>
+
+    <label style="margin: 12px 35px 35px">Find pages with...</label>
+
     <form action="https://www.google.com/search">
       <div>
         <label for="all">all these words:</label>
@@ -45,7 +90,7 @@
         <input type="text" name="as_eq" id="none" />
       </div>
       <div>
-        <input type="submit" value="Advanced Search" />
+        <input class="btn btn-primary" type="submit" value="Advanced Search" />
       </div>
     </form>
   </body>
